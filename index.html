@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <script src="/src/components/main.js" defer></script>
+    <script src="/src/components/TituloDinamico.js" defer></script>
+    <title>Cardapio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barra inicial -->
+      <header>
+        <section class="img">
+          <img src="/Assets/img/logo.png" alt="" />
+        </section>
+        <section id="open">
+          <span>Fechado agora</span>
+          <span>Abre hoje às 18:00</span>
+        </section>
+      </header>
+
+      <div id="fixed-header">
+        <section id="right">
+          <span>Gusto Sushi</span>
+          <p>O melhor da comida japonesa!</p>
+        </section>
+
+        <section id="left">
+          <button>
+
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </section>
+      </div>
+      <!-- Descrição da Loja -->
+      <section id="descript">
+        <h2>Gusto Sushi</h2>
+        <p>O melhor da culinária japonesa da região!</p>
+        <button>
+          <ion-icon name="alarm-outline"></ion-icon>
+          80 min
+        </button>
+      </section>
+
+      <!-- Titulo do produto -->
+      <h1>LANÇAMENTO! GusPIZZA</h1>
+      <!-- Produtos -->
+
+      <Card-News
+        nome="GusPIZZA"
+        desc="PIZZA DE SUSHI!"
+        valor="R$ 46,90"
+        photo="/Assets/img/GusPizza.png"
+      ></Card-News>
+
+      <Card-News
+        nome="SUKIYAKI"
+        desc="Uma combinação perfeita de legumes, macarrão e carne! Aprox. 980g (porção)"
+        valor="R$ 46,90"
+        photo="/Assets/img/SUKIYAKI.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Doces</h1>
+
+      <!-- Produtos -->
+
+      <Card-News
+        nome="Banana hot flambada"
+        desc="Porção com 5 peças de Hot roll de banana (sem arroz) com chocolate branco maçaricado"
+        valor="R$ 16,99"
+        photo="/Assets/img/BananaHot.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Burger</h1>
+
+      <!-- Produtos -->
+      <card-news
+        nome="Gus Burguer"
+        desc="Arroz empanado no panko, recheado com seu recheio preferido, cream cheese, queijo selado com couve crispy e finalizado com molho tarê."
+        valor="A partir de R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220145WoZCcdkYF.jpeg"
+      ></card-news>
+
+      <card-news
+        nome="LANÇAMENTO!!! GUSBURGUER AMERICANO "
+        desc="Arroz empanado, recheado com salmão fresco em cubos, cream cheese, cebolinha, cebola roxa e alface! Acompanha um copinho de tarê, e shoyo!"
+        valor="R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/d6af529697812c38a83d732f6ffb1094.jpeg"
+      ></card-news>
+      <!-- Titulo do produto -->
+
+      <h1>Hot Roll Dog</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Hot Roll Dog de Salmão Grelhado"
+        valor="R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916232553D9NMNAbKZ.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Hot Roll Dog de Salmão Fresco"
+        valor="R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916232709A60YAAP1G.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Hot Roll Dog de Shimeji"
+        valor="R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/44819202209162328369jfCRuxSP.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Hot Roll Dog de Camarão"
+        valor="R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916232856uSHW0VSCD.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Barcas, combinados, combos</h1>
+      <!-- Produtos -->
+      <Card-News
+        nome="Combo Especial de Páscoa - 50 Peças"
+        desc="15 Sashimis de salmão, 12 joe sortidos, 6 niguiris, 15 philadelphia e 2 temakis jr."
+        valor="R$ 144,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233002GsKFsmp8f.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combinado - 14 Peças"
+        desc="Peças só de salmão. 4 Hot holl, 4 uramaki philadelphia, 2 sashimis salmão, 4 joe. Acompanha 2 sachês de shoyu, 1 hashi, 1 copinho de molho tarê e 1 adaptador para hashi."
+        valor="R$ 38,90"
+        photo="https://cdn-production.yooga.com.br/44819202209162330228llsF1cyr.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combinado Individual - 16 Peças"
+        desc="4 Sashimis de salmão, 4 uramakis skin, 4 hossomakis de salmão, 4 uramakis philadelphia. Acompanha kit com 1 hashi, 1adaptador, 2 saches de shoyu e 1 copinho de molho tarê."
+        valor="R$ 40,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233102QifCEKf7T.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="SOS Júnior - 20 Peças"
+        desc="5 Sashimis de salmão, 6 uramakis Philadelphia, 3 joy, 3 mini temakis (salmão fresco ou salmão grelhado), 3 niguiris."
+        valor="R$ 67,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233142O055bXfe6.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Barca - 25 Peças"
+        desc="10 sashimis salmão, 4 joy salmão, 6 uramakis philadelphia, 5 uramakis salmão grelhado."
+        valor="R$ 70,90"
+        photo="https://cdn-production.yooga.com.br/4481920220925044901nN222iBMY.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combinado - 35 Peças"
+        desc="5 Sashimis de tilápia, 5 sashimis de salmão, 5 kanis queijo, 6 uramaki skin, 8 hot holl, 6 uramaki philadelphia."
+        valor="R$ 71,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233308INnzusZ7z.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Barca - 50 Peças Variadas"
+        desc="10 sashimi salmão, 10 hot holl, 6 uramaki philadelphia, 6 uramaki skin, 8 uramaki Califórnia, 6 joe salmão, 4 niguiris salmão."
+        valor="R$ 118,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233348LpRCCiKU6.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Barca - 70 Peças"
+        desc="12 Uramakis Philadelphia, 12 uramakis skin, 16 Hot holl, 10 kani queijo, 10 fatias de sashimi de salmão, 10 fatias de sashimi de tilápia"
+        valor="R$ R$ 127,90"
+        photo="https://cdn-production.yooga.com.br/44819202209162334240g13fxY22.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combinado SOS"
+        desc="50 peças com itens só de salmão, 10 sashimis, 10 hossomakis, 10 uramakis philadelphia, 6 uramakis skin, 6 joe, 4 niguiris, 4 mini temakis de salmão cru."
+        valor="R$ 129,90"
+        photo="https://cdn-production.yooga.com.br/448192022092504502629wNf1Ar7.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Barca SOS Plus - 65 peças"
+        desc="20 Hossomaki salmão, 12 uramaki Philadelphia, 5 niguiris, 8 Joe, 10 sashimis de salmão, 6 uramaki skin, 4 mini temakis de salmão fresco."
+        valor="R$ 138,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233554qqlIxSSVp.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo Family - 100 Peças"
+        desc="12 Uramakis skin, 12 uramakis philadelphia, 12 uramakis de tomate seco com rúcula, 12 uramaki de salmão grelhado, 12 kanis queijo, 15 sashimi de salmão, 10 sashimis de tilápia, 10 joe salmão, 5 niguiris de salmão."
+        valor="R$ 156,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233625LKfciSScE.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo Hot - 25 Peças"
+        desc="5 guiozas (suíno ou bovino), 6 harumakis de queijo, 6 kanis queijo hot, 4 salmão kani hot, 4 niguiris crocantes."
+        valor="R$ 78,90"
+        photo="https://cdn-production.yooga.com.br/44819202209162337030aJHXuHPr.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo Festa - 70 Peças"
+        desc="6 Joy, 6 croquetes de Tilápia, 10 sashimis, 6 harumakis de queijo, 5 hossomakis de salmão, 6 guiozas fritos. 3 mini temakis, 5 salmão kani hot, 6 uramakis philadelfia, 7 hot holl, 6 uramakis de salmão grelhado."
+        valor="R$ 153,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233751En0kDCH1D.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo Mix"
+        desc="Frango a passarinho, batata frita, isca de tilápia"
+        valor="R$ 68,90"
+        photo="https://cdn-production.yooga.com.br/44819202209162338342dsq0qz8A.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo do Amor"
+        desc="6 joe, 6 niguiri, 10 hossomakis, 12 philadelphia, 14 sashimi, 2 temakis jr., 2 mini temaki, 10 hot rolls."
+        valor="R$ 146,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916233902fo8WowsRa.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo Temaki Supremo e Pokan"
+        desc="1 Temaki supremo (Recheio salmão cru ou salmão grelhado) e 4 unidades de pokan - envolto de salmão maçaricado com recheio de shimeji e cream cheese."
+        valor="R$ 67,00"
+        photo="https://cdn-production.yooga.com.br/4481920220916233926kbzXrUfL3.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Combo econômico - 33 peças"
+        desc="Peças só de salmão 5 sashimi de salmão 8 niguiri 9 joy de salmão 11 uramaki philadelphia R$99,90 (preço promocional de lançamento)"
+        valor="R$ 99,90"
+        photo="https://cdn-production.yooga.com.br/ddbf7ab433f0142fc200a108395ebbe6.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Barca Philadelphia - 61 peças"
+        desc="12 sashimi de salmão 12 uramaki philadelphia 8 niguiri 9 joy de salmão 20 peças de hot holl R$ 142,90 (preço promocional )"
+        valor="R$ 142,90"
+        photo="https://cdn-production.yooga.com.br/39eb567a692824d3bf9988e018c90f02.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Sunomono</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Sunomono"
+        desc="Pepino curtido"
+        valor="R$ 9,00"
+        photo="https://cdn-production.yooga.com.br/4481920220929223432WFoYXUOY0.jpeg"
+      ></Card-News>
+      <!-- Titulo do produto -->
+
+      <h1>Ceviche</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Ceviche"
+        desc="Tilápia, cebola roxa,manga, limão, pedaços de salmão para decoração"
+        valor="A partir de R$ 39,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917224550VXFqKNmuw.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Hot Holl</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Hot Roll de Salmão Grelhado"
+        desc="Salmão Grelhado"
+        valor="A partir de R$ 17,00"
+        photo="https://cdn-production.yooga.com.br/4481920220925045203pK2jJRZPW.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Hot Roll Veggie"
+        desc="Shimeji, cenoura, pepino e cebolinha."
+        valor="R$ 19,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224643GFl3QoNnV.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Temakis</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Temaki de Salmão Fresco"
+        desc="1 Unidade"
+        valor="30,90"
+        photo="https://cdn-production.yooga.com.br/44819202209162341494C5MNX88E.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Salmão Grelhado"
+        desc="1 Unidade"
+        valor="R$ 31,90"
+        photo="https://cdn-production.yooga.com.br/4481920220916234218uXdpbDVxG.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Kani"
+        desc="1 Unidade"
+        valor="R$ 23,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230643GZvRx51QQ.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Camarão"
+        desc="1 Unidade"
+        valor="R$ 34,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230643GZvRx51QQ.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Shimeji"
+        desc="1 Unidade"
+        valor="R$ 29,00"
+        photo="https://cdn-production.yooga.com.br/44819202209162342559E7IBeqTU.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Grill Salmão Grelhado"
+        desc="1 Unidade"
+        valor="R$ 33,90"
+        photo="https://cdn-production.yooga.com.br/44819202209170100127XiUwEW0s.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Grill Salmão Cru"
+        desc="1 Unidade"
+        valor="R$ 33,00"
+        photo="https://cdn-production.yooga.com.br/44819202209170100127XiUwEW0s.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Grill Salmão com Queijo"
+        desc="1 Unidade"
+        valor="R$ 35,00"
+        photo="https://cdn-production.yooga.com.br/44819202209170100127XiUwEW0s.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Mini Temakis</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Mini Temaki de Salmão Grelhado"
+        valor="A partir de R$ 36,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917225627pXmPFerSB.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki de Salmão Cru"
+        valor="A partir de R$ 36,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917225441P4dS6rfvo.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Hot de Salmão Grelhado"
+        valor="A partir de R$ 39,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917225004MTdIDLCMX.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Hot de Salmão Crú"
+        valor="A partir de R$ 39,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224936MAmxBXqvA.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Hot de Kani"
+        valor="A partir de R$ 33,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224845Bct7QOwOt.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Grill de Salmão Fresco"
+        valor="A partir de R$ 37,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224845Bct7QOwOt.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Grill de Salmão Grelhado"
+        valor="A partir de R$ 37,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224845Bct7QOwOt.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Temaki Hot</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Temaki Hot de Salmão Fresco"
+        desc="1 Unidade"
+        valor="R$ 33,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917215933tGhDAmdLD.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Hot de Salmão Grelhado"
+        desc="1 Unidade"
+        valor="R$ 33,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917215933tGhDAmdLD.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Hot de Kani"
+        desc="1 Unidade"
+        valor="R$ 26,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917215933tGhDAmdLD.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Hot de Camarão"
+        desc="1 Unidade"
+        valor="R$ 35,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172201149i2mY1TPc.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Hot de Shimeji"
+        desc="1 Unidade"
+        valor="R$ 33,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172200547LXDrfxCJ.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Kani Queijo</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Kani queijo"
+        desc="Joe de Kani com cream cheese."
+        valor="R$ 21,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172245305jB3HPsqi.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Kani Hot de Queijo"
+        desc="10 Unidades"
+        valor="R$ 25,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230801dGGZy6gmQ.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Hossomaki</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Hossomaki Salmão"
+        desc="1 Unidades - 8 peças"
+        valor="R$ 19,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917223649ShbEcxp15.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Uramaki</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Uramaki Philadelphia"
+        desc="1 Unidades - 10 Peças"
+        valor="R$ 23,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917223634gocKN1bBD.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Uramaki Skin"
+        desc="1 Unidades - 10 Peças"
+        valor="R$ 17,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917223620yTZJ90zrE.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Uramaki Italiano"
+        desc="1 Unidades - 10 Peças"
+        valor="R$ 17,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917223604o7jAyZsSu.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Uramaki Salmão Grelhado"
+        desc="1 Unidades - 10 Peças"
+        valor="R$ 20,00"
+        photo="https://cdn-production.yooga.com.br/448192022091722354136EYTn00a.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Uramaki Califórnia"
+        desc="1 Unidades - 10 Peças"
+        valor="R$ 19,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917223519TZoz94dnP.png"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Sashimi</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Sashimi de Salmão"
+        valor="A partir de R$ 19,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917223138wIPDbOrno.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Baterá</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Baterá"
+        desc="6 Unidades - maçaricado e cru igual foto. Sushi sem nori (sem alga) envolvido por salmão."
+        valor="R$ 34,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917223111LBhOKvAPZ.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Joe Salmão</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Joe"
+        desc="PIZZA DE SUSHI!"
+        valor="R$ 26,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172232346zBsC44LC.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Niguiri</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Niguiri Crocante"
+        desc="4 unidades. Salmão empanado e frito por cima, com tempero especial da casa!"
+        valor="R$ 28,90"
+        photo="https://cdn-production.yooga.com.br/44819202209172207154j1p8kXiP.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Pokan</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Pokan"
+        desc="Salmão maçaricado recheado com shimeji e cream cheese."
+        valor="R$ 37,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224439RCuaMQT5Y.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Salmão Kani Hot</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Salmão Kani Hot"
+        desc="8 unidades. Casquinha crocante recheada com salmão grelhado e kani."
+        valor="R$ 35,90"
+        photo="https://cdn-production.yooga.com.br/44819202209172207407AJZm1nQ2.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Joe Hot</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Joe Hot"
+        desc="Joe empanado na panko"
+        valor="R$ 29,00"
+        photo="https://cdn-production.yooga.com.br/4481920220925045118z1qO3qUTL.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Low Carb</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Hot Roll Low Carb"
+        desc="10 Unidades."
+        valor="R$ 30,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172244218G4iTDYQn.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Low Carb"
+        desc="Sem Arroz"
+        valor="A partir de R$ 39,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172243508MA7Wvluw.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Hot Low Carb"
+        desc="Sem Arroz"
+        valor="A partir de R$ 45,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224259NTXSGtiXD.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Temaki Supremo"
+        desc="Sem Arroz"
+        valor="A partir de R$ 46,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230142PtIUJnhc0.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Low Carb de Salmão Cru"
+        desc="Sem Arroz"
+        valor="A partir de R$ 38,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917230217VfhnOavVz.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Low Carb de Salmão Grelhado"
+        desc="Sem Arroz"
+        valor="A partir de R$ 38,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917230245sTPKXiHIv.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Hot Low Carb de Salmão Grelhado"
+        desc="Sem Arroz"
+        valor="A partir de R$ 45,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230307Ko9FAdslE.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Grill Low Carb de Salmão Cru."
+        desc="Sem Arroz"
+        valor="A partir de R$ 42,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230338vfwyuBcH4.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Temaki Grill Low Carb de Salmão Grelhado"
+        desc="Sem Arroz"
+        valor="A partir de R$ 42,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230338vfwyuBcH4.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Joe Salmão Low Carb"
+        desc="Sem Arroz"
+        valor="A partir de R$ 29,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917230529JnMIaFKEv.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Hossomaki Salmão Low Carb"
+        desc="Sem Arroz"
+        valor="R$27,90"
+        photo="https://cdn-production.yooga.com.br/44819202209172244218G4iTDYQn.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Mini Barca Low Carb Vê Sass - 25 peças"
+        desc="Sem Arroz"
+        valor="R$ 71,90"
+        photo="https://cdn-production.yooga.com.br/44819202209172238208m7WeJjtI.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Barca Low Carb - 50 Peças"
+        desc="Sem Arroz"
+        valor="R$ 131,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917223754r06vbbJbx.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Sashimiaki Recheio Kani"
+        desc="Sem Arroz"
+        valor="R$ 33,90"
+        photo="https://cdn-production.yooga.com.br/44819202209172237326JXdD9VKO.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Sashimiaki Recheado de Pepino"
+        desc="Sem Arroz"
+        valor="R$ 33,90"
+        photo="https://cdn-production.yooga.com.br/44819202209172237326JXdD9VKO.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Harumaki</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Harumaki Salmão"
+        desc="Sabor salmão grelhado levemente apimentado"
+        valor="A partir de R$ 32,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220759fcaOhKrFX.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Harumaki Queijo"
+        desc="Rolinho primavera de queijo."
+        valor="A partir de R$ 26,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220759fcaOhKrFX.jpeg"
+      ></Card-News>
+      <!-- Titulo do produto -->
+
+      <h1>Guioza</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Guioza Frito"
+        desc="Suino ou Bovino"
+        valor="A partir de R$ 21,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917220854MxX4gIYKn.jpeg"
+      ></Card-News>
+      <!-- Titulo do produto -->
+
+      <h1>Yakissoba</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Yakissoba de Carne"
+        desc="Macarrão, carne, legumes."
+        valor="A partir de R$ 31,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172154428XWfagUXI.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Yakissoba Misto"
+        desc="Macarrão, frango, carne e legumes."
+        valor="A partir de R$ 31,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172154428XWfagUXI.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Yakissoba Especial"
+        desc="Macarrão, frango, carne, camarão e legumes."
+        valor="A partir de R$ 34,00"
+        photo="https://cdn-production.yooga.com.br/44819202209172154428XWfagUXI.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Shimeji na Manteiga</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Shimeji na Manteiga"
+        valor="R$ 29,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917224455hjesiJWRK.jpeg"
+      ></Card-News>
+      <!-- Titulo do produto -->
+
+      <h1>Porções de Tilápia</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Isca de Tilápia"
+        desc="Uma deliciosa porção de isca de tilápia sequinha e saborosa, e acompanha molho especial da casa."
+        valor="R$ 42,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220320rVayERECz.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Croquete de Tilápia com Queijo"
+        desc="Porção de 12 Unidades."
+        valor="R$ 26,00"
+        photo="https://cdn-production.yooga.com.br/4481920220917220320rVayERECz.jpeg"
+      ></Card-News>
+      <!-- Titulo do produto -->
+
+      <h1>Frango a Passarinho</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Frango a Passarinho Empanado."
+        desc="Porção de frango a passarinho desossado e empanado. Acompanha molho especial da casa"
+        valor="R$ 39,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220245s8Y9xkb0I.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Tempurá</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Tempura de Legumes"
+        desc="5 Unidades"
+        valor="R$ 26,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220217QjNrZsDIO.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Tempurá de Legumes com Camarão"
+        desc="5 Unidades"
+        valor="R$ 31,90"
+        photo="https://cdn-production.yooga.com.br/4481920220917220217QjNrZsDIO.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Batata frita</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Batata frita com cheddar e bacon"
+        desc="300g"
+        valor="R$ 29,90"
+        photo="https://cdn-production.yooga.com.br/44819202209292235215Wd88JMfR.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Batata frita "
+        desc="300g"
+        valor="R$ 19,90"
+        photo="https://cdn-production.yooga.com.br/44819202209292235215Wd88JMfR.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Nuggets</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Nuggets"
+        desc="PIZZA DE SUSHI!"
+        desc="14 unidades"
+        valor="R$ 19,90"
+        photo="https://cdn-production.yooga.com.br/4481920220930220611Q8EVAvzQz.jpeg"
+      ></Card-News>
+
+      <Card-News
+        nome="Nuggets com cheddar e bacon"
+        desc="14 unidades Acompanha katchup"
+        valor="R$ 24,90"
+        photo="https://cdn-production.yooga.com.br/4481920220930220623EuHzs9NUv.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Mix Bolinhos</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="MIX BOLINHOS"
+        desc="12 bolinhos - croquete de tilápia - kibe de tilápia - bolinho de camarão - mandioca com carne seca - bacalhau"
+        desc="12 bolinhos - croquete de tilápia - kibe de tilápia - bolinho de camarão - mandioca com carne seca - bacalhau"
+        valor="R$ 5,00"
+        photo="https://cdn-production.yooga.com.br/44819202210280104162Eu8j3Qnj.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Tarê extra</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Tarê extra"
+        valor="R$ 46,90"
+        photo="data:image/jpeg;base64,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"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Bebidas</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Coca Cola - 2 litros."
+        valor="R$ 46,90"
+        photo="https://cdn-production.yooga.com.br/4481920220912203333l6ctfBFw9.jpeg"
+      ></Card-News>
+
+      <!-- Titulo do produto -->
+
+      <h1>Acessórios</h1>
+
+      <!-- Produtos -->
+      <Card-News
+        nome="Sachê shoyu"
+        desc="PIZZA DE SUSHI!"
+        valor="R$ 0,50"
+        photo="https://cdn-production.yooga.com.br/e8eabbc756abd59c07a07cafd40b3a5a.jpeg"
+      ></Card-News>
+    </div>
+    <footer>
+      <div class="pedido">
+        <button class="btn">
+          <ion-icon id="home" name="home-outline"></ion-icon>
+          <span>Ínicio</span>
+        </button>
+
+        <button class="btn">
+          <ion-icon id="check" name="clipboard-outline"></ion-icon>
+          <span>Pedidos</span>
+        </button>
+      </div>
+    </footer>
+    <script src="/src/components/script.js"></script>
+  </body>
+</html>
