@@ -40,31 +40,29 @@ header {
   transition: top 0.3s; /* Adiciona uma transição suave */
 }
 
-#fixed-header span{
+#fixed-header span {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#fixed-header p{
+#fixed-header p {
   color: #888;
 }
 
-#fixed-header #left button{
+#fixed-header #left button {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  position:absolute;
-  right:0;
+  position: absolute;
+  right: 0;
   cursor: pointer;
   text-decoration: none;
   border: none;
   background-color: transparent;
 }
-
-
 
 #open {
   display: flex;
@@ -140,6 +138,7 @@ footer {
   display: flex;
   padding: 5px;
 }
+
 
 .btn {
   display: flex;

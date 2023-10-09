@@ -1,8 +1,17 @@
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     var header = document.getElementById("fixed-header");
-    if (window.pageYOffset > 200) { // Verifica se o usuário rolou mais de 100px
-        header.style.top = "0"; // Mostra o cabeçalho
+    var navbar = document.getElementById("navbar");
+
+    if (window.pageYOffset > 100) {
+        header.style.top = "0";
     } else {
-        header.style.top = "-100px"; // Esconde o cabeçalho
+        header.style.top = "-100px";
+    }
+
+    if (window.pageYOffset > 200) {
+        navbar.style.top = "-100px";
+    } else {
+        navbar.style.top = "-300px";
     }
 });
+
